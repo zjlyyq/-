@@ -43,3 +43,8 @@ Browsersync 能让浏览器实时、快速响应您的文件更改（html、js�
 
 ![avatar](./2.png)
 这样，直接编写es6语法的js文件就可以了，浏览器会自动刷新
+
+###问题反馈：
+
+1. `npm install babel-preset-es2015 -save `安装语句里的`-save`选项是什么意思
+2. 全局安装的模块是安装到哪里?系统通过nvm管理着多个版本的node,只会安装到当前版本的node中吗？

@@ -12,7 +12,7 @@ document.body.innerHTML = 'Hello World';
 {
     let fruit = 'apple';
     console.log(fruit)
-    var food = 'rice';
+    var food = 'rice bow';
 }
 
 console.log(food);

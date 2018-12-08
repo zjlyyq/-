@@ -1,10 +1,10 @@
 # ES6转换为ES5的几种方式
 
-1. ## 直接命令行使用babel转换
+## 1.直接命令行使用babel转换
 ### 全局安装babel-cli
 
   `npm install -g babel-cli `
-- 安装转换插件（此插件定义了 ES2015 转码规则，相当于是字典的功能）：
+### 安装转换插件（此插件定义了 ES2015 转码规则，相当于是字典的功能）：
 
   `npm install babel-preset-es2015 -save `
 ### 命令行转换
@@ -16,7 +16,7 @@
 ### 在代码里就直接使用转换好的es5的js文件就可以了。
 
 
-2. ## 使用 Browsersync 实时刷新页面和 Babel-Core 实时转换ES6
+## 2.使用 Browsersync 实时刷新页面和 Babel-Core 实时转换ES6
 
 Browsersync 能让浏览器实时、快速响应您的文件更改（html、js、css、sass、less 等）并自动刷新页面。
 
@@ -32,5 +32,14 @@ Browsersync 能让浏览器实时、快速响应您的文件更改（html、js�
 ### HTML 页面引入 babel-core 实时转换 js 代码
 
 /node_modules/babel-core/browser.min.js
+
 /node_modules/babel-core/browser-polyfill.min.js
 ![avatar](./1.png)
+>注意：这里直接引用es6就可以
+
+### 在当前项目目录下启动 Browsersync，开始监听
+
+`browser-sync start --server --files "**" `
+
+![avatar](./2.png)
+这样，直接编写es6语法的js文件就可以了，浏览器会自动刷新
